@@ -55,6 +55,7 @@ function updateCounter() {
 
 function render() {
   const visible = getVisibleTasks();
+  list.innerHTML = "";
   for (const task of visible) {
     const li = document.createElement("li");
     li.className = "task";
